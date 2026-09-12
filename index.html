@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌅 Absen Pagi Sekolah</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Header -->
+  <header>
+    <h1>🌅 ABSEN PAGI SEKOLAH</h1>
+    <p id="tanggalHari"></p>
+  </header>
+
+  <!-- Ringkasan -->
+  <div class="ringkasan">
+    <div class="kartu hadir">
+      <span class="angka" id="jmlHadir">0</span>
+      <span class="label">Hadir</span>
+    </div>
+    <div class="kartu terlambat">
+      <span class="angka" id="jmlTerlambat">0</span>
+      <span class="label">Terlambat</span>
+    </div>
+    <div class="kartu sakit">
+      <span class="angka" id="jmlSakit">0</span>
+      <span class="label">Sakit</span>
+    </div>
+    <div class="kartu izin">
+      <span class="angka" id="jmlIzin">0</span>
+      <span class="label">Izin</span>
+    </div>
+    <div class="kartu alfa">
+      <span class="angka" id="jmlAlfa">0</span>
+      <span class="label">Alfa</span>
+    </div>
+  </div>
+
+  <!-- Form Absen -->
+  <section class="form-bagian">
+    <h2>✍️ Isi Absen Masuk</h2>
+    <form id="formAbsen">
+      <div class="form-grid">
+        <input type="text" id="nama" placeholder="Nama Lengkap" required>
+        <select id="kelas" required>
+          <option value="">Pilih Kelas</option>
+          <option>X RPL</option>
+          <option>XI RPL</option>
+          <option>XII RPL</option>
+          <option>X TKJ</option>
+          <option>XI TKJ</option>
+          <option>XII TKJ</option>
+          <option>Lainnya</option>
+        </select>
+        <input type="time" id="jamMasuk" required>
+        <select id="status" required>
+          <option value="">Status Kehadiran</option>
+          <option>Hadir</option>
+          <option>Terlambat</option>
+          <option>Sakit</option>
+          <option>Izin</option>
+          <option>Alfa</option>
+        </select>
+        <input type="text" id="keterangan" placeholder="Keterangan (opsional)">
+      </div>
+      <button type="submit" class="btn utama">✅ KIRIM ABSEN</button>
+    </form>
+  </section>
+
+  <!-- Riwayat Absen -->
+  <section class="riwayat-bagian">
+    <div class="judul-baris">
+      <h2>📑 Riwayat Absen Hari Ini</h2>
+      <div class="btn-kelompok">
+        <button id="btnSegar" class="btn sekunder">🔄 Segarkan</button>
+        <button id="btnExport" class="btn sekunder">📥 Export</button>
+      </div>
+    </div>
+    <div class="tabel-wadah">
+      <table id="tabelAbsen">
+        <thead>
+          <tr>
+            <th>Tanggal</th>
+            <th>Nama</th>
+            <th>Kelas</th>
+            <th>Jam Masuk</th>
+            <th>Status</th>
+            <th>Keterangan</th>
+          </tr>
+        </thead>
+        <tbody id="tabelIsi">
+          <tr>
+            <td colspan="6" class="loading">⏳ Memuat data...</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
