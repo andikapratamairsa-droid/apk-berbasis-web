@@ -1,5 +1,5 @@
 // ==============================================
-// WAJIB: Tempel URL Web App Google Apps Script di sini!
+const URL_APPS_SCRIPT ='https://script.google.com/macros/s/AKfycbyKf5oXgBv3lj-SbXLzFdN3RqtmKeieUKx1vlpRvq8Nxtho0bS54tfvKXhKhONrEwWoBg/exec';
 const GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1UlbqKEqawFnwDfI42er8N7SpOVY7EL8oDaYvibhk-4w/edit?usp=sharing";
 // ==============================================
 
