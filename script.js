@@ -1,6 +1,6 @@
 // ==============================================
 // WAJIB: Tempel URL Web App Google Apps Script di sini!
-const GOOGLE_SHEET_URL = "https://script.google.com/macros/s/AKfycbzmbSS70uHU_G70qYAgB-vPuLWfrDycB-OX5aJINWuRARFQr4s9M_S0RDddhsvgo01B3A/exec";
+const GOOGLE_SHEET_URL = "https://docs.google.com/spreadsheets/d/1UlbqKEqawFnwDfI42er8N7SpOVY7EL8oDaYvibhk-4w/edit?usp=sharing";
 // ==============================================
 
 let semuaData = [];
